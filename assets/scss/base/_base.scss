@@ -1,0 +1,25 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em; 
+    color: $neutral-900;
+} 
+
+
+a{
+    color: $neutral-900;
+    text-decoration: none;
+    font-weight: 500;
+    display: block; /* 每個連結都是獨立一行，所以可以設定成區塊元素 */
+}
+
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}

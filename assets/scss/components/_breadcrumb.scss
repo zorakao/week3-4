@@ -1,0 +1,27 @@
+/* 元件 */
+.breadcrumb-item + .breadcrumb-item::before{
+    content: '/';
+    padding: 0 12px;
+    color: $neutral-300;
+    font-weight: 700;
+}
+
+.breadcrumb-item{
+    display: flex;
+    font-weight: 500;
+}
+
+.breadcrumb-link{
+    color: $neutral-600;
+
+}
+
+@media (max-width:767px){
+    .breadcrumb-item + .breadcrumb-item::before{
+        content: '/';
+        padding: 0 8px;
+    }
+    .breadcrumb-item{
+        font-size: 14px;
+    }    
+}

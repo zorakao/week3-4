@@ -1,0 +1,81 @@
+/* 產品圖片 */
+.product-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+
+.product-col{ 
+    width: calc(100%/12*6); /* 欄位的佔1/2的空間 */
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+@media (max-width: 767px){
+    .product-md-col{ 
+        width: 100%; /* 欄位的佔1/2的空間 */
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
+
+.del-price{
+    font-size: 14px;
+    font-weight: 400;
+    color: $neutral-500;
+    padding-left: 8px;
+}
+
+/* 產品顏色 */
+.product-color{
+    width: 64px;
+    text-align: center;
+    color: $neutral-600;
+}
+
+/* 產品尺寸 */
+.btn-product-size{
+    width: 160px;
+    border: 1px solid $neutral-300;
+}
+
+.btn-product-size.active,
+.btn-product-size:hover
+{
+    border-color: $neutral-900;
+}
+
+.product-action{
+    display: flex;
+    gap: 8px
+}
+
+.product-action .btn{
+    width: 50%;
+}
+
+@media (max-width:767px){
+    .product-action .btn{
+        width: 80%;
+    }
+}
+
+
+.product-action .bi{
+    padding-right: 8px;
+}
+
+/* 產品資訊 */
+.product-info-title{
+    font-weight: 500;
+}
+
+.product-info-item p{
+    color: $neutral-600;
+}
+
+.product-info-item{
+    border-bottom: 1px solid $neutral-300;
+}

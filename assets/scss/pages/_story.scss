@@ -1,0 +1,69 @@
+/*page */
+.header{
+    background-image: url(/assets/images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 152px 0; /* 使用padding/2的方式，推高圖片高度 */
+    text-align: center;
+}
+
+.eng-title{
+    font-size: 28px;
+}
+
+@media(max-width: 767px){
+    .header{
+        padding: 87px 0;
+        background-image: url(/assets/images/hero-sm.png);
+    }
+    .eng-title{
+        font-size: 20px;
+    }
+}
+
+.radius{
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media (max-width: 767px){
+    .radius{
+        text-align: left;
+    }
+}
+
+/* .intro img{
+    width: 1076px;
+    max-width: none;
+    margin-left: -110px;
+    margin-right: -110px;
+} */
+
+    
+
+.section-line{
+    border-bottom: 1px solid $neutral-300;
+}
+
+.history-desc{
+    border-left: 1px solid $neutral-900;
+    padding-left: 8px;
+}
+
+.history-list{
+    list-style-type: disc;
+    padding-left: 24px;  /* 設定原點樣式後，因凸出去沒對齊，所以設定左側padding，讓原點縮回對齊 */
+}
+
+.concept-item{
+    padding-left: 12px;
+    border-left: 3px solid $neutral-300;
+}
+
+
+.bi{ /* 直接使用BS-icon的class做設定 */
+    padding-right: 8px;
+    vertical-align: bottom;
+}
+
