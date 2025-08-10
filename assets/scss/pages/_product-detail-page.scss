@@ -21,6 +21,18 @@
     }
 }
 
+@media (max-width:767px){
+    .product-md-row{
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    .product-md-col{
+      min-width: 316px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
 .del-price{
     font-size: 14px;
     font-weight: 400;
