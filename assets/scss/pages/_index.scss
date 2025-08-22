@@ -23,16 +23,30 @@
   }
 }
 
-
 @media(max-width: 767px){
-  .urbnstep-banner{
-      padding: auto;
-      background-image: url(/assets/images/banner-sm.png);
+  .urbnstep-md-banner{
+    padding: auto;
+    background-image: url(/assets/images/banner-sm.png);
+    padding: 240px 0; /* 使用padding/2的方式，推高圖片高度 */
+    text-align: left;
+    position: relative;
+
+    .urbnstep{
+      position: absolute;
+      top: 155px;
+      left: 24px;
+    }
+    .purchase{
+      position: absolute;
+      top: 277px;
+      left: 24px;
+    }
   }
   .eng-title{
       font-size: 20px;
   }
 }
+
 
 @media (max-width: 576px){
   .mb-banner{
